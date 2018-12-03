@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "aws-nodejs-typescript",
   "version": "1.0.0",
   "description": "Serverless webpack example using Typescript",
   "main": "handler.js",
@@ -16,6 +16,9 @@
     "typescript": "^2.9.2",
     "webpack": "^4.5.0"
   },
-  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "author": {
+    "email": "perzankowski.kacper@gmail.com",
+    "name": "perzanko"
+  },
   "license": "MIT"
 }
