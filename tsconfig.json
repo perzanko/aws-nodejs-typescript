@@ -1,13 +1,28 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
+    "module": "commonjs",
     "target": "es6",
     "lib": [
       "esnext"
     ],
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "rootDir": "./",
+    "sourceMap": true,
+    "allowJs": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "forceConsistentCasingInFileNames": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "coverage",
+    "./src/config/"
   ]
 }

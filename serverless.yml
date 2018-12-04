@@ -4,6 +4,11 @@ service:
 # Add the serverless-webpack plugin
 plugins:
   - serverless-webpack
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    port: 3030
 
 provider:
   name: aws
@@ -11,9 +16,10 @@ provider:
   runtime: nodejs8.10
 
 functions:
-  hello:
-    handler: handler.hello
-    events:
-      - http:
-          method: get
-          path: hello
+  users_index:
+    handler: src/controllers/users/users_controller.index
+    events: ${file(./src/controllers/users/users_events.yml):index}
+  users_show:
+    handler: src/controllers/users/users_controller.show
+    events: ${file(./src/controllers/users/users_events.yml):show}
+      

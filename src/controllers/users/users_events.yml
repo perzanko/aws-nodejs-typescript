@@ -1,0 +1,12 @@
+index:
+  - http:
+      method: get
+      path: /users
+show:
+  - http:
+      method: get
+      path: /users/{id}
+      request:
+        parameters:
+          paths:
+            id: true
